@@ -1,11 +1,11 @@
 import { legacy_createStore } from "redux";
 
-const counterReducer = ({ state = { counter: 0 }, action }) => {
-  if (action.type === "increamentBy2") {
-    return { counter: state.counter + 2 };
+const counterReducer = (state = { counter: 0 }, action) => {
+  if (action.type === "increamentBy5") {
+    return { counter: state.counter + 5 };
   }
-  if (action.type === "decreamentBy2") {
-    return { counter: state.counter - 2 };
+  if (action.type === "decreamentBy5") {
+    return { counter: state.counter - 5 };
   }
 
   return state;
